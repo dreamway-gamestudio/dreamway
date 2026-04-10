@@ -21,7 +21,7 @@
   font-family: "Archivo Black", Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
   font-size: 42px;
   line-height: 1.1;
-  color: var(--text);
+  color: #111827;
 }
 
 .privacy-date {
@@ -37,7 +37,7 @@
 
 .privacy-intro {
   margin: 0 0 32px;
-  color: var(--text);
+  color: #111827;
   font-size: 15px;
   line-height: 1.7;
 }
