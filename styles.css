@@ -124,7 +124,6 @@ section#games .center{margin-top:28px}
 .game-card:hover .game-app-icon{transform:scale(1.04)}
 
 .footer-inner--no-social{grid-template-columns:2fr 1fr}
-.footer-col--links{text-align:right;margin-left:auto}
 
 .site-footer{border-top:1px solid rgba(229,231,235,.85);background:#fff}
 .footer-inner{display:grid;grid-template-columns:2fr 1fr 1fr;gap:22px;padding:34px 0}
