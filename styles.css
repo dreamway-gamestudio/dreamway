@@ -118,7 +118,7 @@ section#games .center{margin-top:28px}
 
 .cards-grid--two{grid-template-columns:repeat(2,1fr);max-width:680px;margin-inline:auto}
 
-.game-image--icon{background:var(--soft);display:block;height:auto;overflow:hidden}
+.game-image--icon{background:var(--soft);display:block;height:auto;overflow:hidden;border-radius:var(--radius-lg) var(--radius-lg) 0 0}
 .game-image--icon::after{display:none}
 .game-app-icon{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:0;box-shadow:none;display:block;transform:scale(1);transition:transform .7s var(--ease)}
 .game-card:hover .game-app-icon{transform:scale(1.04)}
@@ -186,6 +186,13 @@ section#games .center{margin-top:28px}
   .section-title{font-size:28px}
   .cta-title{font-size:28px}
   .cards-grid{grid-template-columns:1fr}
+  .cards-grid--two{grid-template-columns:repeat(2,1fr);max-width:100%}
+  .game-app-icon{aspect-ratio:auto;height:160px}
+  .game-body{padding:12px 12px 14px}
+  .game-title{font-size:15px}
+  .game-desc{display:none}
+  .game-actions{gap:6px}
+  .game-actions .btn{font-size:10px;padding:7px 10px}
   .footer-inner{grid-template-columns:1fr;}
   .stats-panel{padding:16px}
   .stats-panel-inner{grid-template-columns:1fr;gap:12px}
