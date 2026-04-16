@@ -116,11 +116,12 @@ section#games .center{margin-top:28px}
 
 .is-disabled{opacity:.4;cursor:not-allowed;pointer-events:none}
 
-.cards-grid--two{grid-template-columns:repeat(2,1fr)}
+.cards-grid--two{grid-template-columns:repeat(2,1fr);max-width:680px;margin-inline:auto}
 
-.game-image--icon{background:linear-gradient(135deg,#1e2a3a 0%,#0f1729 100%);display:flex;align-items:center;justify-content:center}
+.game-image--icon{background:var(--soft);display:block;height:auto;overflow:hidden}
 .game-image--icon::after{display:none}
-.game-app-icon{width:110px;height:110px;object-fit:cover;border-radius:22px;box-shadow:0 12px 32px rgba(0,0,0,.45)}
+.game-app-icon{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:0;box-shadow:none;display:block;transform:scale(1);transition:transform .7s var(--ease)}
+.game-card:hover .game-app-icon{transform:scale(1.04)}
 
 .footer-inner--no-social{grid-template-columns:2fr 1fr}
 
