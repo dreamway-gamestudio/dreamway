@@ -35,8 +35,9 @@
     });
   }
 
-  // Read from environment variable (Vite/Vercel: VITE_WEB3FORMS_KEY)
-  const WEB3FORMS_KEY = import.meta.env.VITE_WEB3FORMS_KEY;
+  // On Vercel with Vite: set VITE_WEB3FORMS_KEY in environment variables
+  // On static hosting: fallback key is used
+  const WEB3FORMS_KEY = import.meta.env?.VITE_WEB3FORMS_KEY || '3b25e456-e167-4921-acca-33315e0b490c';
 
   if (form) {
     form.addEventListener('submit', async (e) => {
