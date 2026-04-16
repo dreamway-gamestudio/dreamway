@@ -170,59 +170,6 @@
   margin-top: 48px;
 }
 
-/* Dark theme support */
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg: #0f1115;
-    --text: #f9fafb;
-    --muted: #9ca3af;
-    --line: #1f2937;
-    --card: #111827;
-    --soft: #0a0c10;
-  }
-
-  body {
-    background: var(--bg);
-    color: var(--text);
-  }
-
-  .site-header {
-    background: rgba(15,17,21,.88);
-    border-color: rgba(31,41,55,.9);
-  }
-
-  .privacy-header {
-    background: linear-gradient(180deg, rgba(16,185,129,.10) 0%, rgba(16,185,129,0) 100%);
-    border-color: rgba(16,185,129,.18);
-  }
-
-  .privacy-section-block {
-    background: var(--card);
-    border-color: var(--line);
-  }
-
-  .privacy-section-block:hover {
-    border-color: #374151;
-  }
-
-  .privacy-email-large {
-    border-color: var(--brand);
-  }
-
-  .privacy-email-large:hover {
-    background: var(--brand);
-    color: #fff;
-  }
-
-  .site-footer {
-    background: var(--bg);
-    border-color: var(--line);
-  }
-
-  .footer-bottom {
-    border-color: var(--line);
-  }
-}
 
 /* Responsive design */
 @media (max-width: 980px) {
