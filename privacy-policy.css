@@ -6,14 +6,31 @@
 .privacy-header {
   text-align: center;
   margin-bottom: 48px;
+  padding: 52px 24px 44px;
+  border-radius: var(--radius-lg);
+  background: linear-gradient(180deg, rgba(16,185,129,.10) 0%, rgba(16,185,129,0) 100%);
+  border: 1px solid rgba(16,185,129,.14);
+  position: relative;
+  overflow: hidden;
+}
+
+.privacy-header::before {
+  content: "";
+  position: absolute;
+  inset: -80px -80px auto -80px;
+  height: 280px;
+  background: radial-gradient(closest-side, rgba(16,185,129,.18), rgba(16,185,129,0));
+  filter: blur(8px);
+  pointer-events: none;
 }
 
 .privacy-eyebrow {
   margin: 0 0 12px;
-  color: #374151;
+  color: var(--brand-2);
   font-size: 12px;
   text-transform: uppercase;
   letter-spacing: 0.14em;
+  font-weight: 600;
 }
 
 .privacy-title {
@@ -164,6 +181,21 @@
     --soft: #0a0c10;
   }
 
+  body {
+    background: var(--bg);
+    color: var(--text);
+  }
+
+  .site-header {
+    background: rgba(15,17,21,.88);
+    border-color: rgba(31,41,55,.9);
+  }
+
+  .privacy-header {
+    background: linear-gradient(180deg, rgba(16,185,129,.10) 0%, rgba(16,185,129,0) 100%);
+    border-color: rgba(16,185,129,.18);
+  }
+
   .privacy-section-block {
     background: var(--card);
     border-color: var(--line);
@@ -180,6 +212,15 @@
   .privacy-email-large:hover {
     background: var(--brand);
     color: #fff;
+  }
+
+  .site-footer {
+    background: var(--bg);
+    border-color: var(--line);
+  }
+
+  .footer-bottom {
+    border-color: var(--line);
   }
 }
 
