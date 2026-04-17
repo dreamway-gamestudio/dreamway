@@ -46,7 +46,7 @@
 
     function setFavicon() {
       const isDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-      const icon = isDark ? darkIcon : lightIcon;
+      const icon = isDark ? lightIcon : darkIcon;
       let link = document.querySelector('link[rel="icon"]');
       if (!link) {
         link = document.createElement('link');
