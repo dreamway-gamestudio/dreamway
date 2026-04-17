@@ -39,6 +39,27 @@
   // On static hosting: fallback key is used
   const WEB3FORMS_KEY = import.meta.env?.VITE_WEB3FORMS_KEY || '3b25e456-e167-4921-acca-33315e0b490c';
 
+  // Favicon theme switcher
+  (function() {
+    const darkIcon = 'icon-dark.ico';
+    const lightIcon = 'icon-light.ico';
+
+    function setFavicon() {
+      const isDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      const icon = isDark ? darkIcon : lightIcon;
+      let link = document.querySelector('link[rel="icon"]');
+      if (!link) {
+        link = document.createElement('link');
+        link.rel = 'icon';
+        document.head.appendChild(link);
+      }
+      link.href = icon;
+    }
+
+    setFavicon();
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', setFavicon);
+  })();
+
   if (form) {
     form.addEventListener('submit', async (e) => {
       e.preventDefault();
